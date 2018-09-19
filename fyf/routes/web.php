@@ -1,6 +1,8 @@
 <?php
 
-/*
+
+
+/*use Illuminate\Http\Request;
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -12,9 +14,17 @@
 */
 
 Route::get('/', function () {
+    return view('inicio');
+});
+
+Route::get('/contacto', function () {
     return view('contacto');
 });
 
-Route::get('/contacto', function(){
-    return 'Hello world';
+Route::get('/formulario', function(){
+    return view('formulario');
 });
+
+
+//Route::get('/send-form', 'HomeController@sendContact');
+Route::get('/send-fran', 'enviar@sendFran');

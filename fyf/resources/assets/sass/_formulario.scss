@@ -1,0 +1,161 @@
+.formulario{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding-top: 16px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+.contacto-title{
+    color: $fondo-cafe;
+    text-transform: none;
+    font-size: 3.7rem;
+    margin-top: 24PX;
+    margin-bottom: 32px;
+    letter-spacing: 4px;
+    font-weight: normal;
+
+    @include tablet{
+        font-size: 3.5rem;
+        margin-left: 16px;
+    }
+    @include mobile{
+        font-size: 2.5rem;
+        margin-left: 8px;
+        letter-spacing: 3px;
+        margin-bottom: 16px;
+    }
+}
+
+.contacto-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .form-container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @include mobile{
+            flex-direction: column;
+        }
+
+        .form-card{
+            width: 49%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            @include mobile{
+                width: 100%;
+            }
+
+            label{
+                margin-top: 16px;
+                margin-bottom: 0;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+
+            input{
+                height: 38px;
+                border: solid 2px $fondo-cafe;
+                position: relative;
+            }
+            select{
+                border: solid 2px $fondo-cafe;
+                height: 38px;
+                position: relative;
+            }
+        }
+    }
+    .form-container-2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        label{
+            margin-bottom: 0;
+            margin-top: 16px;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        input{
+            height: 38px;
+            border: solid 2px $fondo-cafe;
+            position: relative;
+        }
+        select{
+            border: solid 2px $fondo-cafe;
+            height: 38px;
+            position: relative;
+        }
+        textarea{
+            height: 200px;
+            border: solid 2px $fondo-cafe;
+            padding-top: 4px;
+            position: relative;
+        }
+
+    }
+    button{
+        width: auto;
+        padding: 8px 24px 6px 24px;
+        border: 2px solid;
+        border-color: #313131;
+        background: transparent;
+        border-radius: 4px;
+        margin: auto;
+        font-weight: bold;
+        margin-top: 24px;
+        letter-spacing: 4px;
+        font-size: 18px;
+        transition: all .25s ease-in-out;
+    }
+    button:hover{
+        background: $fondo-cafe;
+        color: $fondo-beige;
+        transition: all .25s ease-in-out;
+    }
+    input.error, textarea.error, select.error{
+        border-color:#F44336!important;
+    }
+    label.error{
+        color: #F44336;
+        position: absolute;
+        top: 12px;
+        font-size: 11px !important;
+        right: 0;
+        margin-bottom: 0.5rem !important;
+    }
+    .nota span{
+        color: $fondo-cafe;
+        letter-spacing: 1px;
+        font-size: .9rem;
+    }
+
+    
+    input, select, textarea{
+        padding-left: 16px;
+        font-size: 18px;
+        background: transparent;
+    }
+   
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+

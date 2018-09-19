@@ -1,0 +1,177 @@
+.acerca{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 40px;
+
+    .acerca-left{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 48%;
+        height: auto;
+        margin-top: 40px;
+        padding: 0;
+
+        .acerca-title-content{
+            img{
+                position: absolute;
+                left: -64px;
+                top: 64px;
+                height: 80px;
+            }
+        }
+        h2{
+            width: 60%;
+            letter-spacing: 5px;
+            font-size: 48px;
+            margin-top: 112px;
+            margin-bottom: 32px;
+        }
+     
+        p{
+            z-index: 3;
+            width: 80%;
+            font-size: 18px;
+        }
+
+        button{
+            z-index: 3;
+            border: 2px solid $fondo-cafe;
+            outline: 0;
+            display: inline-block;
+            padding: 10px 96px;
+            margin-top: 48px;
+            color: $fondo-cafe;
+            font-weight: bold;
+            letter-spacing: 3px;
+            background-color: transparent;
+            text-align: center;
+            cursor: pointer;
+            transition: all .25s ease-in-out;
+        }
+        button:hover{
+            color: $white;
+            background-color: $fondo-cafe;
+            transition: all .25s ease-in-out;
+        }
+    }
+    .acerca-right{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 48%;
+        height: auto;
+        margin-top: 40px;
+        padding: 0;
+
+        .acerca-img-contUp{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
+            margin-bottom: 24px;
+
+            img{
+                position: relative;
+                width: auto;
+                height: 276px;
+            }
+        }
+
+        .acerca-img-contDown{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
+
+            img{
+                position: relative;
+                width: auto;
+                height: 276px;
+            }
+        }
+    }
+}
+
+
+
+/////////////////////////////////////
+/*  imagenes fuera del work space  */
+/////////////////////////////////////
+.draw-1{
+    z-index: 4;
+    position: absolute;
+    top: 68vh;
+    right: 0;
+    width: 304px;
+}
+.draw-2{
+    z-index: 1;
+    position: absolute;
+    top: 130vh;
+    left: 0;
+    width: 328px;
+}
+
+/////////////////////////////////////
+/*  beneficios  */
+/////////////////////////////////////
+.beneficios{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+    margin-bottom: 48px;
+
+    p{
+        z-index: 4;
+        position: relative;
+        width: 18%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 22px;
+
+        img{
+            z-index: -1;
+            position: absolute;
+            bottom: 33px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            height: 152px;
+        }
+    }
+}
+
+/////////////////////////////////////
+/*  videos  */
+/////////////////////////////////////
+.videos-pasta{
+    position: relative;
+    max-width: 1232px;
+}
+.video-box{
+    position: relative;
+    
+}
+.btn-play{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+
+    img{
+        height: 56px;
+    }
+}
