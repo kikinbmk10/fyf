@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contacto | Pasta y Pasto</title>
+  <title>Inicio | Pasta y Pasto</title>
 
   <!-- [#TODO] Dont forget to update the FAVICON IMAGES in the next route -->
   <link rel="icon" type="image/png" href="{{asset('img/contacto/icon.png')}}" sizes="128x128">
@@ -141,7 +141,7 @@
     </div>
     <div class="especialidades-box">
       <!--imagenes-->
-      <img class="" src="{{asset('img/inicio/Especialidades1.png')}}" alt="">
+      <img class="" src="{{asset('img/inicio/Especialidades_01.png')}}" alt="">
       <img class="" src="{{asset('img/inicio/Especialidades_02.png')}}" alt="">
       <img class="" src="{{asset('img/inicio/Especialidades_03.png')}}" alt="">
       <img class="" src="{{asset('img/inicio/Especialidades_04.png')}}" alt="">
@@ -150,6 +150,50 @@
       <img class="" src="{{asset('img/inicio/Especialidades_07.png')}}" alt="">
       <img class="" src="{{asset('img/inicio/Especialidades_08.png')}}" alt="">
     </div>
+    <div class="sucursales-index">
+      <div id="map" class="suc-item">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.532851354075!2d-101.1656932913923!3d19.68992571241954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0dfec7c5bd0b%3A0xc85de8ea82e426e8!2sTeniente+Isidro+Alem%C3%A1n+510%2C+Chapultepec+Sur%2C+58260+Morelia%2C+Mich.!5e0!3m2!1ses!2smx!4v1537469136907" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="suc-item">
+        <div class="itemsSlider">
+            <div class="sliderContent slides fade">
+                <h2 class="h2-slide">SUCURSALES</h2>
+                <h3 class="h3-slide">MATRIZ</h3>
+                <p class="p-slide">Teniente Alemán #510 <br>Col. Chapultepec Sur. Morelia, Mich.</p>
+                <p class="p-slide">T. 3249706</p>
+                <p class="p-slide">pastaypasto@gmail.com</p>
+                <a href="#" class="btn-sucursales">VER TODAS</a>
+            </div>
+            <div class="sliderContent slides fade" >
+                <h2 class="h2-slide">Sucursales2</h2>
+                <h3 class="h3-slide">Matriz</h3>
+                <p class="p-slide">Teniente Alemán #510 <br>Col. Chapultepec Sur. Morelia, Mich.</p>
+                <p class="p-slide">T. 3249706</p>
+                <p class="p-slide">pastaypasto@gmail.com</p>
+                <a href="#" class="btn-sucursales">VER TODAS</a>
+            </div>
+            <div class="sliderContent slides fade">
+                <h2 class="h2-slide">Sucursales3</h2>
+                <h3 class="h3-slide">Matriz</h3>
+                <p class="p-slide">Teniente Alemán #510 <br>Col. Chapultepec Sur. Morelia, Mich.</p>
+                <p class="p-slide">T. 3249706</p>
+                <p class="p-slide">pastaypasto@gmail.com</p>
+                <a href="#" class="btn-sucursales">VER TODAS</a>
+            </div>          
+            <span id="btn1" class="itemsDirections" onclick="plusIndex(-1)"> <img class="" src="{{asset('img/inicio/flecha.png')}}" alt=""></span>
+            <span id="btn2" class="itemsDirections" onclick="plusIndex(+1)"> <img class="" src="{{asset('img/inicio/flecha.png')}}" alt=""></span>
+        </div>
+        <img class="img-al" src="{{asset('img/inicio/Albahaca.png')}}" alt="">
+        <img class="img-ajo" src="{{asset('img/inicio/Ajo.png')}}" alt="">
+        <img class="img-jitoG" src="{{asset('img/inicio/jitomateG.png')}}" alt="">
+        <img class="img-pastaP" src="{{asset('img/inicio/PastaPenne.png')}}" alt="">
+        <img class="img-codito" src="{{asset('img/inicio/codito.png')}}" alt="">
+        <img class="img-pastaBola" src="{{asset('img/inicio/pastabola.png')}}" alt="">
+        <img class="img-draw-suc" src="{{asset('img/inicio/Draw01.png')}}" alt="">
+      </div>
+    </div>
+    <!--imagen footer -->
+    <img class="img-footer" src="{{asset('img/inicio/footer.png')}}" alt="">
   </section>
 
 
@@ -172,7 +216,7 @@
         centerPadding: '60px',
         slidesToShow: 3,
         infinite: true,
-        arrows: true,
+        arrows: false,
         responsive: [
           {
             breakpoint: 768,
@@ -196,4 +240,33 @@
       });
     });
   </script>
+
+  <!-- script del slider -->
+  <script>
+    var slideIndex = 1;
+
+    showImage(slideIndex);
+
+    function plusIndex(n) {
+      showImage(slideIndex += n);
+    }
+
+    function showImage(n) {
+      var slide = document.getElementsByClassName("slides");
+
+      if (n > slide.length){
+        slideIndex = 1
+      };
+      if (n < 1){
+        slideIndex = slide.length
+      };
+      for (var i = 0; i < slide.length; i++) {
+        slide[i].style.display = "none";
+        
+      };
+      slide[slideIndex-1].style.display = "flex";
+    }
+
+  </script>
+
 </html>

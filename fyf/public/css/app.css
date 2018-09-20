@@ -110,6 +110,63 @@
   background-color: #f2f2f2;
 }
 
+@font-face {
+  font-family: 'poppins';
+  src: url(/fonts/Poppins-Regular.ttf?e212f84086965da44a6c84f3d9a683a4);
+}
+
+@font-face {
+  font-family: 'poppins-Light';
+  src: url(/fonts/Poppins-Light.ttf?b2b23d2504016419aa88d0eea5ed5db9);
+}
+
+@font-face {
+  font-family: 'poppins-medium';
+  src: url(/fonts/Poppins-Medium.ttf?5bfdccef795165b1f9ab9a3193b2aca1);
+}
+
+@font-face {
+  font-family: 'poppins-Bold';
+  src: url(/fonts/Poppins-Bold.ttf?2f55e0d4b3f9eb3ffaefdac379fa3f8b);
+}
+
+@font-face {
+  font-family: 'poppins-sb';
+  src: url(/fonts/Poppins-SemiBold.ttf?f018d93c4bd9b0bbdfb82ae61ebf8da4);
+}
+
+@font-face {
+  font-family: 'Questrial';
+  src: url(/fonts/Questrial-Regular.ttf?2fc665f3118f89e3eb1cbc9c1639a0bb);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -502,7 +559,7 @@ header.main-nav.responsive #nav-icon span {
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 3px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
   text-align: center;
   cursor: pointer;
   -webkit-transition: all .25s ease-in-out;
@@ -514,6 +571,11 @@ header.main-nav.responsive #nav-icon span {
   color: #000;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
+}
+
+.img-footer {
+  width: 100%;
+  height: auto;
 }
 
 .acerca {
@@ -808,13 +870,234 @@ header.main-nav.responsive #nav-icon span {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   height: auto;
 }
 
 .especialidades-box img {
   width: 25%;
-  max-height: 300px;
+  height: auto;
+}
+
+/*  Sucursales y maps   */
+
+.sucursales-index {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+.sucursales-index .suc-item {
+  position: relative;
+  width: 50%;
+  height: 528px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.sucursales-index .suc-item .itemsSlider {
+  z-index: 4;
+  position: relative;
+  width: 98%;
+  height: 360px;
+  margin-left: -80px;
+  border-radius: 12px;
+  background: #ffffff;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  -webkit-box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sucursales-index .suc-item .itemsSlider .slides {
+  display: none;
+}
+
+.sucursales-index .suc-item .itemsSlider .sliderContent {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 32px 48px 32px 96px;
+  opacity: 1;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.sucursales-index .suc-item .itemsSlider .sliderContent .h2-slide {
+  font-family: 'questrial';
+  font-size: 30px;
+  letter-spacing: 4px;
+  color: #c0aa79;
+  font-weight: lighter;
+  margin-bottom: 40px;
+}
+
+.sucursales-index .suc-item .itemsSlider .sliderContent .h3-slide {
+  font-family: 'questrial';
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #313131;
+  font-weight: bold;
+}
+
+.sucursales-index .suc-item .itemsSlider .sliderContent .p-slide {
+  font-family: 'questrial';
+  font-size: 14px;
+  color: #313131;
+  line-height: 1.4;
+}
+
+.sucursales-index .suc-item .itemsSlider .sliderContent .btn-sucursales {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px 38px 6px 38px;
+  margin-top: 16px;
+  color: #313131;
+  font-size: 14px;
+  color: #313131;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: 'questrial';
+  background: #ffffff;
+  border: 2px solid #313131;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.sucursales-index .suc-item .itemsSlider .sliderContent .btn-sucursales:hover {
+  color: #ffffff;
+  background: #313131;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+}
+
+.sucursales-index .suc-item .itemsSlider .itemsDirections {
+  z-index: 4;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  height: 40px;
+  cursor: pointer;
+}
+
+.sucursales-index .suc-item .itemsSlider .itemsDirections img {
+  z-index: 4;
+  width: auto;
+  height: 40px;
+}
+
+.sucursales-index .suc-item .itemsSlider #btn1 {
+  left: 32px;
+}
+
+.sucursales-index .suc-item .itemsSlider #btn2 {
+  position: absolute;
+  top: 30%;
+  right: 48px;
+}
+
+.sucursales-index .suc-item .itemsSlider #btn2 img {
+  z-index: 4;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  width: auto;
+  height: 40px;
+}
+
+.sucursales-index .suc-item .img-al {
+  position: absolute;
+  top: 0;
+  left: 104px;
+  height: 56px;
+}
+
+.sucursales-index .suc-item .img-ajo {
+  z-index: 3;
+  position: absolute;
+  top: 48px;
+  left: -24px;
+  height: 56px;
+}
+
+.sucursales-index .suc-item .img-jitoG {
+  z-index: 5;
+  position: absolute;
+  bottom: 40px;
+  right: 35%;
+  height: 96px;
+}
+
+.sucursales-index .suc-item .img-pastaP {
+  z-index: -1;
+  position: absolute;
+  bottom: -24px;
+  left: 28%;
+  height: 80px;
+}
+
+.sucursales-index .suc-item .img-codito {
+  z-index: 5;
+  position: absolute;
+  bottom: 35%;
+  right: 0;
+  height: 80px;
+}
+
+.sucursales-index .suc-item .img-pastaBola {
+  z-index: -1;
+  position: absolute;
+  top: -32px;
+  right: 0;
+  height: 160px;
+}
+
+.sucursales-index .suc-item .img-draw-suc {
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 200px;
 }
 
 .contacto-franquisia {

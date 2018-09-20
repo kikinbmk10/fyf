@@ -246,11 +246,186 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 100%;
     height: auto;
 
     img{
         width: 25%;
-        max-height: 300px;
+        height: auto;
+    }
+}
+
+/////////////////////////////////////
+/*  Sucursales y maps   */
+/////////////////////////////////////
+.sucursales-index{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+
+    .suc-item{
+        position: relative;
+        width: 50%;
+        height: 528px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .itemsSlider{
+            z-index: 4;
+            position: relative;
+            width: 98%;
+            height: 360px;
+            margin-left: -80px;
+            border-radius: 12px;
+            background: $white;
+            transition: all 2s ease-in-out;
+            box-shadow: 4px 4px 8px 1px rgba(0,0,0,.2);
+            .slides{
+                display: none;
+            }
+
+            .sliderContent{
+                position: absolute;
+                height: auto;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 32px 48px 32px 96px;
+                opacity: 1;
+                transition: all 2s ease-in-out;
+               
+                .h2-slide{
+                    font-family: 'questrial';
+                    font-size: 30px;
+                    letter-spacing: 4px;
+                    color: $text-slide;
+                    font-weight: lighter;
+                    margin-bottom: 40px;
+                }
+
+                .h3-slide{
+                    font-family: 'questrial';
+                    font-size: 20px;
+                    letter-spacing: 4px;
+                    color: $fondo-cafe;
+                    font-weight: bold;
+                }
+                .p-slide{
+                    font-family: 'questrial';
+                    font-size: 14px;
+                    color: $fondo-cafe;
+                    line-height: 1.4;
+                }
+                .btn-sucursales{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 8px 38px 6px 38px;
+                    margin-top: 16px;
+                    color: $fondo-cafe;
+                    font-size: 14px;
+                    color: $fondo-cafe;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                    font-family: 'questrial';
+                    background: $white;
+                    border: 2px solid $fondo-cafe;
+                    transition: all .2s ease-in-out;
+                }
+
+                .btn-sucursales:hover{
+                    color: $white;
+                    background: $fondo-cafe;
+                    transition: all .2s ease-in-out;
+                    text-decoration: none;
+                }               
+            }
+            .itemsDirections{
+                z-index: 4;
+                position: absolute;
+                top: 30%;
+                width: auto;
+                height: 40px;
+                cursor: pointer;
+
+                img{
+                    z-index: 4;
+                    width: auto;
+                    height: 40px;
+                }
+            }
+            #btn1{
+                left: 32px;
+            }
+            #btn2{
+                position: absolute;
+                top: 30%;
+                right: 48px;
+
+                img{
+                    z-index: 4;
+                    transform: rotateY(180deg);
+                    width: auto;
+                    height: 40px;
+                }
+            }
+        }
+
+        .img-al{
+            position: absolute;
+            top: 0;
+            left: 104px;
+            height: 56px;
+        }
+        .img-ajo{
+            z-index: 3;
+            position: absolute;
+            top: 48px;
+            left: -24px;
+            height: 56px;
+        }
+        .img-jitoG{
+            z-index: 5;
+            position: absolute;
+            bottom: 40px;
+            right: 35%;
+            height: 96px;
+        }
+        .img-pastaP{
+            z-index: -1;
+            position: absolute;
+            bottom: -24px;
+            left: 28%;
+            height: 80px; 
+        }
+        .img-codito{
+            z-index: 5;
+            position: absolute;
+            bottom: 35%;
+            right: 0;
+            height: 80px; 
+        }
+        .img-pastaBola{
+            z-index: -1;
+            position: absolute;
+            top: -32px;
+            right: 0;
+            height: 160px; 
+        }
+        .img-draw-suc{
+            z-index: 5;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 200px; 
+        }
     }
 }
