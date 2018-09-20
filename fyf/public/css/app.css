@@ -725,6 +725,98 @@ header.main-nav.responsive #nav-icon span {
   height: 56px;
 }
 
+/*  especialidades  */
+
+.especialidades {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+  padding-top: 160px;
+  padding-bottom: 144px;
+  background-color: #313131;
+}
+
+.especialidades h2 {
+  position: relative;
+  margin-left: -70px;
+  font-size: 44px;
+  color: #ffffff;
+  letter-spacing: 5px;
+}
+
+.especialidades h2 img {
+  position: absolute;
+  left: 40px;
+  bottom: -48px;
+  height: 85px;
+}
+
+.especialidades .esp-camaron {
+  position: absolute;
+  top: -42px;
+  right: 80px;
+  height: 154px;
+}
+
+.especialidades .esp-especias {
+  position: absolute;
+  top: 56px;
+  left: 0px;
+  height: 160px;
+}
+
+.especialidades .esp-jito {
+  position: absolute;
+  right: 224px;
+  bottom: 64px;
+  height: 72px;
+}
+
+.especialidades .esp-monito {
+  position: absolute;
+  bottom: 48px;
+  left: 120px;
+  height: 72px;
+}
+
+.especialidades .esp-romero {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 154px;
+}
+
+/*  especialidades  Imagenes*/
+
+.especialidades-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.especialidades-box img {
+  width: 25%;
+  max-height: 300px;
+}
+
 .contacto-franquisia {
   position: relative;
   display: -webkit-box;

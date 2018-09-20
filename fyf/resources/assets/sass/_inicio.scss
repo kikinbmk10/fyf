@@ -175,3 +175,82 @@
         height: 56px;
     }
 }
+
+/////////////////////////////////////
+/*  especialidades  */
+/////////////////////////////////////
+.especialidades{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-top: 160px;
+    padding-bottom: 144px;
+    background-color: $fondo-cafe;
+
+    h2{
+        position: relative;
+        margin-left: -70px;
+        font-size: 44px;
+        color: $white;
+        letter-spacing: 5px;
+
+        img{
+            position: absolute;
+            left: 40px;
+            bottom: -48px;
+            height: 85px;
+        }
+    }
+    .esp-camaron{
+        position: absolute;
+        top: -42px;
+        right: 80px;
+        height: 154px;
+    }
+
+    .esp-especias{
+        position: absolute;
+        top: 56px;
+        left: 0px;
+        height: 160px;
+    }
+    .esp-jito{
+        position: absolute;
+        right: 224px;
+        bottom: 64px;
+        height: 72px;
+    }
+
+    .esp-monito{
+        position: absolute;
+        bottom: 48px;
+        left: 120px;
+        height: 72px;
+    }
+    .esp-romero{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        height: 154px;
+    }
+}
+
+/////////////////////////////////////
+/*  especialidades  Imagenes*/
+/////////////////////////////////////
+.especialidades-box{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+
+    img{
+        width: 25%;
+        max-height: 300px;
+    }
+}

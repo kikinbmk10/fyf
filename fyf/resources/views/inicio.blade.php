@@ -128,6 +128,28 @@
         <img class="img-video" src="{{asset('img/inicio/pet.png')}}" alt="">
       </div>
     </div>
+    <div class="especialidades">
+      <h2>NUESTRAS
+        <img class="" src="{{asset('img/inicio/especialidades.png')}}" alt="">
+      </h2>
+      <!--imagenes alrededor-->
+      <img class="esp-camaron" src="{{asset('img/inicio/camaron.png')}}" alt="">
+      <img class="esp-especias" src="{{asset('img/inicio/especias.png')}}" alt="">
+      <img class="esp-jito" src="{{asset('img/inicio/jitomate.png')}}" alt="">
+      <img class="esp-monito" src="{{asset('img/inicio/monito.png')}}" alt="">
+      <img class="esp-romero" src="{{asset('img/inicio/Romero.png')}}" alt="">
+    </div>
+    <div class="especialidades-box">
+      <!--imagenes-->
+      <img class="" src="{{asset('img/inicio/Especialidades1.png')}}" alt="">
+      <img class="" src="{{asset('img/inicio/Especialidades_02.png')}}" alt="">
+      <img class="" src="{{asset('img/inicio/Especialidades_03.png')}}" alt="">
+      <img class="" src="{{asset('img/inicio/Especialidades_04.png')}}" alt="">
+      <img class="" src="{{asset('img/inicio/Especialidades_05.png')}}" alt="">
+      <img class="" src="{{asset('img/inicio/Especialidades_06.png')}}" alt="">
+      <img class="" src="{{asset('img/inicio/Especialidades_07.png')}}" alt="">
+      <img class="" src="{{asset('img/inicio/Especialidades_08.png')}}" alt="">
+    </div>
   </section>
 
 
