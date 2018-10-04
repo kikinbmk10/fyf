@@ -20,21 +20,34 @@
         
         .img-bg-beige{
             width: 100%;
+            @include mobile{
+                height: 152px;
+            }
         }
         .img-logo-beige{
             position: absolute;
             top: 50%;
             transform: translate(0, -55%);
-            width: 200px;
+            width: 240px;
             height: auto;
             margin: auto;
+
+            @include tablet{
+                width: 114px;
+            }
         }
         .img-tenedor-beige{
             position: absolute;
             top: 0;
             left: 0;
-            width: 304px;
+            width: 280px;
             height: auto; 
+            @include tablet{
+                width: 170px;
+            }
+            @include mobile{
+                display: none;
+            }
         }
         .img-jitomate1-beige{
             position: absolute;
@@ -42,13 +55,23 @@
             left: 27%;
             width: auto;
             height: auto; 
+            @include mobile{
+                display: none;
+            }
         }
         .img-jitomate2-beige{
             position: absolute;
             top: 24%;
             right: 10%;
             width: auto;
-            height: auto; 
+            height: auto;
+            @include tablet{
+                top: 4%;
+                right: 4%;
+            } 
+            @include mobile{
+                display: none;
+            }
         }
         .img-penne-beige{
             position: absolute;
@@ -56,6 +79,9 @@
             left: 14%;
             width: 160px;
             height: auto; 
+            @include mobile{
+                display: none;
+            }
         }
         .img-slogan-beige{
             position: absolute;
@@ -63,6 +89,12 @@
             right: 7%;
             width: 264px;
             height: auto;
+            @include tablet{
+                width: 200px;
+            }
+            @include mobile{
+                display: none;
+            }
         }
         .img-camaron-beige{
             position: absolute;
@@ -70,6 +102,160 @@
             right: 20%;
             width: 184px;
             height: auto; 
+            @include tablet{
+                width: 114px;
+            }
+            @include mobile{
+                display: none;
+            }
+        }
+    }
+    .contacto-content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: $max-width-screen ;
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        margin-top: 56px;
+        @include mobile{
+            margin-top: 24px;
+        }
+
+        h2{
+            margin-top: 48px;
+            margin-bottom: 8px;
+            text-align: center;
+            font-size: 52px;
+            color: #fff;
+            @include mobile{
+                font-size: 24px;
+            }
+        }
+        .img-para-ti{
+            width: 200px;
+            margin-bottom: 32px;
+            @include mobile{
+                width: 160px;
+            }
+        }
+        .btn-adquirir-content{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 24px;
+
+            a{
+                @include mobile{
+                    display: flex;
+                    justify-content: center;
+                }
+                img{
+                    @include mobile{
+                        width: 90%;
+                    }
+                }
+                h3{
+                    position: absolute;
+                    top: 36px;
+                    left: 0;
+                    right: 0;
+                    width: 64%;
+                    margin: auto;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 19px;
+                    letter-spacing: 1px;
+                    line-height: 1.2;
+                    
+                    @include mobile{
+                        top: 41px;
+                        font-size: 15px;
+                    }
+                }
+            }
+         
+        }
+        h4{
+            width: 20%;
+            margin-top: 40px;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            @include mobile{
+                width: 90%;
+            }
+        }
+
+        .redes-content{
+            display: flex;
+            align-items: center;
+            width: 20%;
+            @include tablet{
+                width: 32%;
+            }
+            @include mobile{
+                width: 77%;
+            }
+
+            .img-insta{
+                margin-left: 23%;
+            }
+        }
+
+    }
+
+     /*imagenes en absolute (ingredientes)*/
+     .img-cont-especias{
+        position: absolute;
+        top: 46%;
+        left: 0;
+        @include mobile{
+            display: none;
+        }
+    }
+    .img-cont-monito{
+        position: absolute;
+        top: 57%;
+        left: 8%;
+        @include mobile{
+            display: none;
+        }
+    }
+    .img-cont-jitomate{
+        position: absolute;
+        top: 66%;
+        left: 0;
+        @include mobile{
+            display: none;
+        }
+    }
+    .img-especias2{
+        position: absolute;
+        top: 45%;
+        right: 0;
+        @include mobile{
+            display: none;
+        }
+    }
+    .img-camaron2{
+        position: absolute;
+        top: 56%;
+        right: 6%;
+        @include mobile{
+            display: none;
+        }
+    }
+    .img-penneCont{
+        position: absolute;
+        top: 40%;
+        right: 6%;
+        @include mobile{
+            display: none;
         }
     }
 }

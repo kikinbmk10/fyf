@@ -25,27 +25,27 @@
       </a>
       <nav role="navigation">
         <ul>
-          <a href="">
+          <a href="#">
             <li>
               NOSOTROS
             </li>
           </a>
-          <a href="">
+          <a href="#">
             <li>
               MENÚ
             </li>
           </a>
-          <a href="">
+          <a href="#">
             <li>
               SUCURSALES
             </li>
           </a>
-          <a href="">
+          <a href="/Franquicias">
             <li>
               FRANQUICIAS
             </li>
           </a>
-          <a href="">
+          <a href="/Contacto">
             <li>
               CONTACTO
             </li>
@@ -110,24 +110,57 @@
         <img class="img-video" src="{{asset('img/inicio/pet.png')}}" alt="">
       </div>
       <div class="video-box">
-        <a href="#video1" class="afterglow btn-play">
+        <a href="#video2" class="afterglow btn-play">
           <img class="play-button-menu" src="{{asset('img/inicio/play.png')}}" alt="">
         </a>
         <img class="img-video" src="{{asset('img/inicio/pet.png')}}" alt="">
       </div>
       <div class="video-box">
-        <a href="#video1" class="afterglow btn-play">
+        <a href="#video3" class="afterglow btn-play">
           <img class="play-button-menu" src="{{asset('img/inicio/play.png')}}" alt="">
         </a>
         <img class="img-video" src="{{asset('img/inicio/pet.png')}}" alt="">
       </div>
       <div class="video-box">
-        <a href="#video1" class="afterglow btn-play">
+        <a href="#video4" class="afterglow btn-play">
+          <img class="play-button-menu" src="{{asset('img/inicio/play.png')}}" alt="">
+        </a>
+        <img class="img-video" src="{{asset('img/inicio/pet.png')}}" alt="">
+      </div>
+      <div class="video-box">
+        <a href="#video5" class="afterglow btn-play">
+          <img class="play-button-menu" src="{{asset('img/inicio/play.png')}}" alt="">
+        </a>
+        <img class="img-video" src="{{asset('img/inicio/pet.png')}}" alt="">
+      </div>
+      <div class="video-box">
+        <a href="#video6" class="afterglow btn-play">
           <img class="play-button-menu" src="{{asset('img/inicio/play.png')}}" alt="">
         </a>
         <img class="img-video" src="{{asset('img/inicio/pet.png')}}" alt="">
       </div>
     </div>
+    <!--Videos-->
+    <video id="video1" width="960" height="540" class="afterglow-lightboxplayer" data-autoresize="fit" style="">
+      <source type="video/mp4" src="{{asset('video/0_PastaArtesanal_PastayPasto_Final.mp4')}}">    
+    </video>
+    <video id="video2" width="960" height="540" class="afterglow-lightboxplayer" data-autoresize="fit" style="">
+      <source type="video/mp4" src="{{asset('video/1_Adondequieras_Prueba.mp4')}}">    
+    </video>
+    <video id="video3" width="960" height="540" class="afterglow-lightboxplayer" data-autoresize="fit" style="">
+      <source type="video/mp4" src="{{asset('video/2_PastaPatria_Final.mp4')}}">    
+    </video>
+    <video id="video4" width="960" height="540" class="afterglow-lightboxplayer" data-autoresize="fit" style="">
+      <source type="video/mp4" src="{{asset('video/7_PetFriendly_PastayPasto_Final.mp4')}}">    
+    </video>
+    <video id="video5" width="960" height="540" class="afterglow-lightboxplayer" data-autoresize="fit" style="">
+      <source type="video/mp4" src="{{asset('video/8_AnadeSabor_PastayPasto_Final.mp4')}}">    
+    </video>
+    <video id="video6" width="960" height="540" class="afterglow-lightboxplayer" data-autoresize="fit" style="">
+      <source type="video/mp4" src="{{asset('video/9_Timelapse_PastayPasto_Final.mp4')}}">    
+    </video>
+
+     <!--seccion de especialidades-->
     <div class="especialidades">
       <h2>NUESTRAS
         <img class="" src="{{asset('img/inicio/especialidades.png')}}" alt="">
@@ -195,6 +228,9 @@
     <!--imagen footer -->
     <img class="img-footer" src="{{asset('img/inicio/footer.png')}}" alt="">
   </section>
+  <!--footer -->
+  <footer>
+  </footer>
 
 
 
@@ -240,6 +276,8 @@
       });
     });
   </script>
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/afterglowplayer@1.x"></script>
 
   <!-- script del slider -->
   <script>

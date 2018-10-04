@@ -1,0 +1,71 @@
+.btn-colision {
+    position: relative;
+    z-index: 2;
+    display: block;
+    align-self: flex-end;
+    min-width: 110px;
+    width: 100%;
+    margin-top: 16px;
+    padding: 8px 24px 6px 24px;
+    color: $fondo-beige-light;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    background-color: $fondo-beige;
+    border: 2px solid $fondo-beige;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+.btn-colision:before, .btn-colision:after {
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: $fondo-beige-light;
+    border-radius: 50%;
+}
+.btn-colision:before {
+    left: -16px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.btn-colision:after {
+    right: -16px;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+}
+.btn-colision:hover {
+    color: $fondo-beige;
+    transition: all .2s ease-in-out;
+}
+.btn-colision:hover:before {
+    -webkit-animation: criss-cross-left 0.8s both;
+    animation: criss-cross-left 0.8s both;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+.btn-colision:hover:after {
+    -webkit-animation: criss-cross-right 0.8s both;
+    animation: criss-cross-right 0.8s both;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+.btn-colision:hover {
+    color: $fondo-beige;
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,.3);
+    transition: all .2s ease-in-out;
+}
+
+.btn-colision:active {
+    color: $fondo-beige;
+    box-shadow: inset 0px 0px 32px rgba(0,0,0,.3);
+    transition: all .2s ease-in-out;
+}

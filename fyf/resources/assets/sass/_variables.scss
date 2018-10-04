@@ -4,6 +4,7 @@
 $fondo-cafe: #313131;
 $fondo-beige: #c0aa7a;
 $text-slide: #c0aa79;
+$fondo-beige-light: #fbf0da;
 
 // Colors
 $white: #ffffff;
@@ -88,3 +89,34 @@ $line-height-base: 1.6;
       opacity: 1;
     }
   }
+
+  @keyframes criss-cross-left {
+    0% {
+        left: -10px;
+    }
+    50% {
+        left: 50%;
+        width: 14px;
+        height: 14px;
+    }
+    100% {
+        left: 50%;
+        width: 105%;
+        height: 200px;
+    }
+}
+@keyframes criss-cross-right {
+    0% {
+        right: -10px;
+    }
+    50% {
+        right: 50%;
+        width: 14px;
+        height: 14px;
+    }
+    100% {
+        right: 50%;
+        width: 105%;
+        height: 200px;
+    }
+}

@@ -17,11 +17,11 @@ Route::get('/', function () {
     return view('inicio');
 });
 
-Route::get('/contacto', function () {
+Route::get('/Franquicias', function () {
     return view('contacto');
 });
 
-Route::get('/formulario', function(){
+Route::get('/Contacto', function(){
     return view('formulario');
 });
 
